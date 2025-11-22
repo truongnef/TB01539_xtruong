@@ -70,7 +70,7 @@
             // btnDangNhap
             // 
             btnDangNhap.BackColor = Color.SkyBlue;
-            btnDangNhap.Location = new Point(532, 530);
+            btnDangNhap.Location = new Point(540, 530);
             btnDangNhap.Name = "btnDangNhap";
             btnDangNhap.Size = new Size(250, 51);
             btnDangNhap.TabIndex = 3;
@@ -81,7 +81,7 @@
             // btnThoat
             // 
             btnThoat.BackColor = Color.Red;
-            btnThoat.Location = new Point(829, 530);
+            btnThoat.Location = new Point(862, 530);
             btnThoat.Name = "btnThoat";
             btnThoat.Size = new Size(250, 51);
             btnThoat.TabIndex = 4;
@@ -119,6 +119,7 @@
             Margin = new Padding(4);
             Name = "frmLogin";
             Text = "frmLogin";
+            Load += frmLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }

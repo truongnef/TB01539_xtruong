@@ -18,5 +18,22 @@ namespace DAL_PolyCafe
             NhanVien nv = DBUtil.Value<NhanVien>(sql, thamSo);
             return nv;
         }
+
+        public void ResetMatKhau(string mk, string email)
+        {
+            try
+            {
+                string sql = "UPDATE NhanVien SET MatKhau = @0 WHERE Email = @1";
+                List<object> thamSo = new List<object>();
+                thamSo.Add(mk);
+                thamSo.Add(email);
+                DBUtil.Update(sql, thamSo);
+
+            }
+            catch (Exception e)
+            {
+                throw;
+            }
+        }
     }
 }

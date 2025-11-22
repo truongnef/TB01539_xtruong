@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UTIL_PolyCafe;
 
 namespace GUI_PolyCafe
 {
@@ -41,7 +42,7 @@ namespace GUI_PolyCafe
                     MessageBox.Show(this, "Tài khoản đang tạm khóa, vui lòng viên hệ QTV!!!");
                     return;
                 }
-                //AuthUtil.user = nv;
+                AuthUtil.user = nv;
                 frmMain main = new frmMain();
                 main.Show();
                 this.Hide();
@@ -50,7 +51,12 @@ namespace GUI_PolyCafe
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

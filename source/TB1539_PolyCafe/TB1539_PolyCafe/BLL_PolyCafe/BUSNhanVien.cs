@@ -38,5 +38,10 @@ namespace BLL_PolyCafe
                 return false;
             }
         }
+
+        public List<NhanVien> GetAllNhanVienlist()
+        {
+            return dalNhanVien.selectAll();
+        }
     }
 }

@@ -16,11 +16,40 @@ namespace GUI_PolyCafe
         {
             InitializeComponent();
         }
+        private Form currentFormChild;
+
+        private void openChildForm(Form formChild)
+        {
+            if (currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+            currentFormChild = formChild;
+            formChild.TopLevel = false;
+            formChild.FormBorderStyle = FormBorderStyle.None;
+            formChild.Dock = DockStyle.Fill;
+            pnMain.Controls.Add(formChild);
+            pnMain.Tag = formChild;
+            formChild.BringToFront();
+            formChild.Show();
+
+
+        }
 
         private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DoiMatKhau reset = new DoiMatKhau();
             reset.ShowDialog();
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmNhanVien());
         }
     }
 }

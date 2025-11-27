@@ -180,6 +180,7 @@
             btnLamMoi.Size = new Size(168, 41);
             btnLamMoi.TabIndex = 15;
             btnLamMoi.Text = "Làm mới";
+            btnLamMoi.Click += btnLamMoi_Click;
             // 
             // btnThem
             // 
@@ -544,7 +545,7 @@
             txtTimKiem.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTimKiem.Font = new Font("Segoe UI", 9F);
             txtTimKiem.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTimKiem.Location = new Point(518, 4);
+            txtTimKiem.Location = new Point(518, 11);
             txtTimKiem.Margin = new Padding(3, 4, 3, 4);
             txtTimKiem.Name = "txtTimKiem";
             txtTimKiem.PasswordChar = '\0';

@@ -279,5 +279,11 @@ namespace GUI_PolyCafe
 
             }
         }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            ClearForm();
+            LoadDanhSachNhanVien();
+        }
     }
 }

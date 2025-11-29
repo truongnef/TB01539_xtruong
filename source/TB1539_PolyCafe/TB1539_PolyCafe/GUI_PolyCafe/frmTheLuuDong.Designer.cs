@@ -172,6 +172,7 @@
             dgvDanhSachTLD.ThemeStyle.RowsStyle.Height = 29;
             dgvDanhSachTLD.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dgvDanhSachTLD.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dgvDanhSachTLD.CellDoubleClick += dgvDanhSachTLD_CellDoubleClick;
             // 
             // guna2Panel1
             // 
@@ -273,6 +274,7 @@
             btnSua.Size = new Size(168, 41);
             btnSua.TabIndex = 17;
             btnSua.Text = "Sửa";
+            btnSua.Click += btnSua_Click;
             // 
             // btnXoa
             // 
@@ -289,6 +291,7 @@
             btnXoa.Size = new Size(168, 41);
             btnXoa.TabIndex = 16;
             btnXoa.Text = "Xóa";
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnLamMoi
             // 
@@ -305,6 +308,7 @@
             btnLamMoi.Size = new Size(168, 41);
             btnLamMoi.TabIndex = 15;
             btnLamMoi.Text = "Làm mới";
+            btnLamMoi.Click += btnLamMoi_Click;
             // 
             // btnThem
             // 
@@ -394,6 +398,7 @@
             Controls.Add(label1);
             Name = "frmTheLuuDong";
             Text = "frmTheLuuDong";
+            Load += frmTheLuuDong_Load_1;
             guna2GroupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvDanhSachTLD).EndInit();
             guna2Panel1.ResumeLayout(false);

@@ -51,5 +51,20 @@ namespace GUI_PolyCafe
         {
             openChildForm(new frmNhanVien());
         }
+
+        private void thẻLưuĐộngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmTheLuuDong());
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmLogin());
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

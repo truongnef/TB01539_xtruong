@@ -76,5 +76,10 @@ namespace GUI_PolyCafe
         {
 
         }
+
+        private void loạiSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmLoaiSanPham());
+        }
     }
 }

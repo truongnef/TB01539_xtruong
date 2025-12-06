@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             label1 = new Label();
             label2 = new Label();
             chkHienThiMK = new CheckBox();
@@ -35,6 +36,8 @@
             btnThoat = new Button();
             txtTenDangNhap = new TextBox();
             txtMatKhau = new TextBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -69,7 +72,7 @@
             // 
             // btnDangNhap
             // 
-            btnDangNhap.BackColor = Color.SkyBlue;
+            btnDangNhap.BackColor = Color.SteelBlue;
             btnDangNhap.Location = new Point(540, 530);
             btnDangNhap.Name = "btnDangNhap";
             btnDangNhap.Size = new Size(250, 51);
@@ -103,11 +106,23 @@
             txtMatKhau.Size = new Size(391, 34);
             txtMatKhau.TabIndex = 6;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(50, 83);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(443, 498);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.PeachPuff;
             ClientSize = new Size(1178, 686);
+            Controls.Add(pictureBox1);
             Controls.Add(txtMatKhau);
             Controls.Add(txtTenDangNhap);
             Controls.Add(btnThoat);
@@ -120,6 +135,7 @@
             Name = "frmLogin";
             Text = "frmLogin";
             Load += frmLogin_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -133,5 +149,6 @@
         private Button btnThoat;
         private TextBox txtTenDangNhap;
         private TextBox txtMatKhau;
+        private PictureBox pictureBox1;
     }
 }

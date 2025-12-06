@@ -132,6 +132,7 @@
             // 
             dataGridViewCellStyle1.BackColor = Color.White;
             dgvDanhSachSP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dgvDanhSachSP.BackgroundColor = Color.PeachPuff;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
@@ -171,7 +172,7 @@
             dgvDanhSachSP.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
             dgvDanhSachSP.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
             dgvDanhSachSP.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            dgvDanhSachSP.ThemeStyle.BackColor = Color.White;
+            dgvDanhSachSP.ThemeStyle.BackColor = Color.PeachPuff;
             dgvDanhSachSP.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
             dgvDanhSachSP.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
             dgvDanhSachSP.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -191,6 +192,7 @@
             // 
             // guna2Panel1
             // 
+            guna2Panel1.BackColor = Color.PeachPuff;
             guna2Panel1.Controls.Add(txtTimKiem);
             guna2Panel1.CustomizableEdges = customizableEdges3;
             guna2Panel1.Dock = DockStyle.Top;
@@ -451,6 +453,7 @@
             guna2GroupBox1.Controls.Add(guna2HtmlLabel1);
             guna2GroupBox1.CustomizableEdges = customizableEdges27;
             guna2GroupBox1.Dock = DockStyle.Left;
+            guna2GroupBox1.FillColor = Color.PeachPuff;
             guna2GroupBox1.Font = new Font("Segoe UI", 9F);
             guna2GroupBox1.ForeColor = Color.FromArgb(125, 137, 149);
             guna2GroupBox1.Location = new Point(0, 41);
@@ -479,16 +482,16 @@
             // 
             // guna2Button1
             // 
-            guna2Button1.BackColor = SystemColors.ControlLightLight;
+            guna2Button1.BackColor = SystemColors.ActiveCaption;
             guna2Button1.CustomizableEdges = customizableEdges23;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = Color.White;
+            guna2Button1.FillColor = Color.LightGray;
             guna2Button1.Font = new Font("Segoe UI", 9F);
             guna2Button1.ForeColor = Color.Black;
-            guna2Button1.Location = new Point(118, 514);
+            guna2Button1.Location = new Point(109, 514);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges24;
             guna2Button1.Size = new Size(163, 25);
@@ -509,6 +512,7 @@
             // 
             // label1
             // 
+            label1.BackColor = Color.NavajoWhite;
             label1.Dock = DockStyle.Top;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(0, 0);

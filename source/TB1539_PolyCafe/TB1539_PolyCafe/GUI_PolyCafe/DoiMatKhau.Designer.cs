@@ -42,9 +42,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(275, 22);
+            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(237, 20);
             label1.Name = "label1";
-            label1.Size = new Size(148, 28);
+            label1.Size = new Size(211, 38);
             label1.TabIndex = 0;
             label1.Text = "Quên Mật Khẩu";
             // 
@@ -98,28 +99,31 @@
             // 
             // btnHuy
             // 
+            btnHuy.BackColor = Color.Red;
             btnHuy.Location = new Point(137, 395);
             btnHuy.Name = "btnHuy";
             btnHuy.Size = new Size(154, 41);
             btnHuy.TabIndex = 8;
             btnHuy.Text = "Hủy";
-            btnHuy.UseVisualStyleBackColor = true;
+            btnHuy.UseVisualStyleBackColor = false;
             btnHuy.Click += button1_Click;
             // 
             // btnDoiMatKhau
             // 
+            btnDoiMatKhau.BackColor = Color.SteelBlue;
             btnDoiMatKhau.Location = new Point(389, 395);
             btnDoiMatKhau.Name = "btnDoiMatKhau";
             btnDoiMatKhau.Size = new Size(154, 41);
             btnDoiMatKhau.TabIndex = 9;
             btnDoiMatKhau.Text = "Đổi mật khẩu";
-            btnDoiMatKhau.UseVisualStyleBackColor = true;
+            btnDoiMatKhau.UseVisualStyleBackColor = false;
             btnDoiMatKhau.Click += btnDoiMatKhau_Click;
             // 
             // DoiMatKhau
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.PeachPuff;
             ClientSize = new Size(699, 473);
             Controls.Add(btnDoiMatKhau);
             Controls.Add(btnHuy);

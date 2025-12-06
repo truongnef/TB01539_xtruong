@@ -116,6 +116,7 @@
             // 
             dataGridViewCellStyle1.BackColor = Color.White;
             dgvDanhSachLNV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dgvDanhSachLNV.BackgroundColor = Color.PeachPuff;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
@@ -155,7 +156,7 @@
             dgvDanhSachLNV.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
             dgvDanhSachLNV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
             dgvDanhSachLNV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            dgvDanhSachLNV.ThemeStyle.BackColor = Color.White;
+            dgvDanhSachLNV.ThemeStyle.BackColor = Color.PeachPuff;
             dgvDanhSachLNV.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
             dgvDanhSachLNV.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
             dgvDanhSachLNV.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -175,6 +176,7 @@
             // 
             // guna2Panel1
             // 
+            guna2Panel1.BackColor = Color.PeachPuff;
             guna2Panel1.Controls.Add(txtTimKiem);
             guna2Panel1.CustomizableEdges = customizableEdges3;
             guna2Panel1.Dock = DockStyle.Top;
@@ -347,6 +349,8 @@
             // 
             // guna2GroupBox1
             // 
+            guna2GroupBox1.BackColor = Color.PeachPuff;
+            guna2GroupBox1.BorderColor = Color.PeachPuff;
             guna2GroupBox1.Controls.Add(btnSua);
             guna2GroupBox1.Controls.Add(btnXoa);
             guna2GroupBox1.Controls.Add(btnLamMoi);
@@ -359,6 +363,7 @@
             guna2GroupBox1.Controls.Add(guna2HtmlLabel1);
             guna2GroupBox1.CustomizableEdges = customizableEdges21;
             guna2GroupBox1.Dock = DockStyle.Left;
+            guna2GroupBox1.FillColor = Color.PeachPuff;
             guna2GroupBox1.Font = new Font("Segoe UI", 9F);
             guna2GroupBox1.ForeColor = Color.FromArgb(125, 137, 149);
             guna2GroupBox1.Location = new Point(0, 41);
@@ -370,6 +375,7 @@
             // 
             // label1
             // 
+            label1.BackColor = Color.NavajoWhite;
             label1.Dock = DockStyle.Top;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(0, 0);

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UTIL_PolyCafe;
 
 namespace GUI_PolyCafe
 {
@@ -59,7 +60,10 @@ namespace GUI_PolyCafe
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            openChildForm(new frmLogin());
+            this.Hide();
+            frmLogin login = new frmLogin();
+            login.ShowDialog();
+            this.Close();
         }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
@@ -74,7 +78,15 @@ namespace GUI_PolyCafe
 
         private void đăngXuấtToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
+            danhMucToolStripMenuItem.Visible = false;
+            banHangToolStripMenuItem.Visible = false;
+            nhanVienToolStripMenuItem.Visible = false;
+            doanhThuToolStripMenuItem.Visible = false;
 
+            this.Hide();
+            AuthUtil.user = null;
+            frmLogin login = new frmLogin();
+            login.Show();
         }
 
         private void loạiSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)

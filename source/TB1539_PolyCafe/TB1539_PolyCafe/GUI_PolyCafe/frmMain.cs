@@ -60,12 +60,12 @@ namespace GUI_PolyCafe
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
@@ -75,12 +75,39 @@ namespace GUI_PolyCafe
 
         private void đăngXuấtToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            
+            DialogResult rs = MessageBox.Show(
+                "Bạn có chắc chắn muốn đăng xuất không?",
+                "Đăng xuất",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (rs == DialogResult.Yes)
+            {
+                this.Hide(); // Ẩn frmMain
+                frmLogin login = new frmLogin();
+                login.Show();
+            }
         }
 
         private void loạiSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openChildForm(new frmLoaiSanPham());
+        }
+
+        private void thoátToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            DialogResult rs = MessageBox.Show(
+                "Bạn có chắc chắn muốn thoát chương trình không?",
+                "Xác nhận thoát",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (rs == DialogResult.Yes)
+            {
+                Application.Exit(); // Thoát toàn bộ chương trình
+            }
         }
     }
 }

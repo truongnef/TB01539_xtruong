@@ -51,7 +51,17 @@ namespace GUI_PolyCafe
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
+            DialogResult rs = MessageBox.Show(
+                "Bạn có chắc chắn muốn thoát chương trình không?",
+                "Xác nhận thoát",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
 
+            if (rs == DialogResult.Yes)
+            {
+                Application.Exit(); // Thoát toàn bộ chương trình
+            }
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
